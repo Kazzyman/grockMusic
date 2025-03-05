@@ -1,0 +1,2 @@
+go get github.com/gordonklaus/portaudio
+go get github.com/mjibson/go-dsp/fft
