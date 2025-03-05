@@ -1,2 +1,9 @@
 go get github.com/gordonklaus/portaudio
 go get github.com/mjibson/go-dsp/fft
+
+export PATH="/usr/local/bin:$PATH" 
+
+pkg-config --cflags --libs portaudio-2.0
+Should output something like -I/usr/local/Cellar/portaudio/19.7.0/include -L/usr/local/Cellar/portaudio/19.7.0/lib -lportaudio.
+
+codesign -f -s - ./
